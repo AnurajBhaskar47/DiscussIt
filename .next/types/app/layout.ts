@@ -43,7 +43,7 @@ export interface PageProps {
 }
 export interface LayoutProps {
   children?: React.ReactNode
-
+  authModal: React.ReactNode
   params?: any
 }
 

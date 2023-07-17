@@ -230,38 +230,12 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./node_modules/next/dist/client/image.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
     "(app-client)/./node_modules/next/dist/client/link.js": {
       "*": {
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
         ],
         "async": false
       },
@@ -269,7 +243,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
         ],
         "async": false
       },
@@ -277,7 +251,33 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
         ],
         "async": false
       }
@@ -287,7 +287,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
         ],
         "async": false
       },
@@ -295,7 +295,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
         ],
         "async": false
       },
@@ -303,7 +303,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
         ],
         "async": false
       },
@@ -311,7 +311,75 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/head.js",
         "name": "defaultHead",
         "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/UserAccountNav.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/UserAccountNav.tsx",
+        "name": "*",
+        "chunks": [
           "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/UserAccountNav.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "UserAccountNav": {
+        "id": "(sc_client)/./src/components/UserAccountNav.tsx",
+        "name": "UserAccountNav",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/ui/Avatar.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/ui/Avatar.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/ui/Avatar.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "Avatar": {
+        "id": "(sc_client)/./src/components/ui/Avatar.tsx",
+        "name": "Avatar",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "AvatarFallback": {
+        "id": "(sc_client)/./src/components/ui/Avatar.tsx",
+        "name": "AvatarFallback",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "AvatarImage": {
+        "id": "(sc_client)/./src/components/ui/Avatar.tsx",
+        "name": "AvatarImage",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
         ],
         "async": false
       }
@@ -454,6 +522,32 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./src/components/ui/Providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/ui/Providers.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/ui/Providers.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/ui/Providers.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./src/components/ui/Toaster.tsx": {
       "*": {
         "id": "(sc_client)/./src/components/ui/Toaster.tsx",
@@ -480,70 +574,322 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./src/components/ui/avatar.tsx": {
+    "(app-client)/./src/app/r/create/page.tsx": {
       "*": {
-        "id": "(sc_client)/./src/components/ui/avatar.tsx",
+        "id": "(sc_client)/./src/app/r/create/page.tsx",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/r/create/page:static/chunks/app/r/create/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./src/components/ui/avatar.tsx",
+        "id": "(sc_client)/./src/app/r/create/page.tsx",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "Avatar": {
-        "id": "(sc_client)/./src/components/ui/avatar.tsx",
-        "name": "Avatar",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "AvatarFallback": {
-        "id": "(sc_client)/./src/components/ui/avatar.tsx",
-        "name": "AvatarFallback",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "AvatarImage": {
-        "id": "(sc_client)/./src/components/ui/avatar.tsx",
-        "name": "AvatarImage",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./src/components/UserAuthForm.tsx": {
-      "*": {
-        "id": "(sc_client)/./src/components/UserAuthForm.tsx",
-        "name": "*",
-        "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./src/components/UserAuthForm.tsx",
-        "name": "",
-        "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/r/create/page:static/chunks/app/r/create/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./src/components/UserAuthForm.tsx",
+        "id": "(sc_client)/./src/app/r/create/page.tsx",
         "name": "default",
         "chunks": [
-          "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+          "app/r/create/page:static/chunks/app/r/create/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+        ],
+        "async": false
+      },
+      "suspense": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "suspense",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+        ],
+        "async": false
+      },
+      "NoSSR": {
+        "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+        "name": "NoSSR",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/EditorOutput.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/EditorOutput.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/EditorOutput.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/EditorOutput.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/MiniCreatePost.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/MiniCreatePost.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/MiniCreatePost.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/MiniCreatePost.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/Post.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/Post.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/Post.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/Post.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/PostFeed.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/PostFeed.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/PostFeed.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/PostFeed.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/post-vote/PostVoteClient.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/post-vote/PostVoteClient.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/post-vote/PostVoteClient.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/post-vote/PostVoteClient.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/renderers/CustomCodeRenderer.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/renderers/CustomCodeRenderer.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/renderers/CustomCodeRenderer.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/renderers/CustomCodeRenderer.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/renderers/CustomImageRenderer.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/renderers/CustomImageRenderer.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/renderers/CustomImageRenderer.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/renderers/CustomImageRenderer.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/SubscribeLeaveToggle.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/SubscribeLeaveToggle.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/SubscribeLeaveToggle.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/SubscribeLeaveToggle.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/ToFeedButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/ToFeedButton.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/ToFeedButton.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/ToFeedButton.tsx",
+        "name": "default",
+        "chunks": [
+          "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/Editor.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/Editor.tsx",
+        "name": "*",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/Editor.tsx",
+        "name": "",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+        ],
+        "async": false
+      },
+      "Editor": {
+        "id": "(sc_client)/./src/components/Editor.tsx",
+        "name": "Editor",
+        "chunks": [
+          "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
         ],
         "async": false
       }
@@ -553,6 +899,9 @@ self.__RSC_MANIFEST={
   "cssFiles": {
     "/home/aj-47/DiscussIt/src/app/layout": [
       "static/css/app/layout.css"
+    ],
+    "/home/aj-47/DiscussIt/src/app/r/[slug]/submit/page": [
+      "static/css/app/r/[slug]/submit/page.css"
     ]
   },
   "clientModules": {
@@ -1228,6 +1577,54 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
     "/home/aj-47/DiscussIt/src/styles/globals.css#": {
       "id": "null",
       "name": "default",
@@ -1235,7 +1632,7 @@ self.__RSC_MANIFEST={
         "static/css/app/layout.css"
       ]
     },
-    "/home/aj-47/DiscussIt/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
+    "/home/aj-47/DiscussIt/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Montserrat\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"100\"}],\"variableName\":\"monterserrat\"}#": {
       "id": "null",
       "name": "default",
       "chunks": [
@@ -1246,7 +1643,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1254,7 +1651,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1262,7 +1659,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1270,7 +1667,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1278,7 +1675,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1286,55 +1683,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/image.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/node_modules/next/dist/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/node_modules/next/dist/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1342,7 +1691,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1350,7 +1699,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1358,7 +1707,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1366,7 +1715,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1374,7 +1723,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1382,7 +1731,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1390,7 +1739,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1398,7 +1747,71 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/head.js",
       "name": "defaultHead",
       "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/UserAccountNav.tsx": {
+      "id": "(app-client)/./src/components/UserAccountNav.tsx",
+      "name": "*",
+      "chunks": [
         "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/UserAccountNav.tsx#": {
+      "id": "(app-client)/./src/components/UserAccountNav.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/UserAccountNav.tsx#UserAccountNav": {
+      "id": "(app-client)/./src/components/UserAccountNav.tsx",
+      "name": "UserAccountNav",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Avatar.tsx": {
+      "id": "(app-client)/./src/components/ui/Avatar.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Avatar.tsx#": {
+      "id": "(app-client)/./src/components/ui/Avatar.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Avatar.tsx#Avatar": {
+      "id": "(app-client)/./src/components/ui/Avatar.tsx",
+      "name": "Avatar",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Avatar.tsx#AvatarFallback": {
+      "id": "(app-client)/./src/components/ui/Avatar.tsx",
+      "name": "AvatarFallback",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Avatar.tsx#AvatarImage": {
+      "id": "(app-client)/./src/components/ui/Avatar.tsx",
+      "name": "AvatarImage",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
       ],
       "async": false
     },
@@ -1538,6 +1951,30 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "/home/aj-47/DiscussIt/src/components/ui/Providers.tsx": {
+      "id": "(app-client)/./src/components/ui/Providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Providers.tsx#": {
+      "id": "(app-client)/./src/components/ui/Providers.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ui/Providers.tsx#default": {
+      "id": "(app-client)/./src/components/ui/Providers.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
     "/home/aj-47/DiscussIt/src/components/ui/Toaster.tsx": {
       "id": "(app-client)/./src/components/ui/Toaster.tsx",
       "name": "*",
@@ -1562,67 +1999,338 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/home/aj-47/DiscussIt/src/components/ui/avatar.tsx": {
-      "id": "(app-client)/./src/components/ui/avatar.tsx",
+    "/home/aj-47/DiscussIt/src/app/r/create/page.tsx": {
+      "id": "(app-client)/./src/app/r/create/page.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/create/page:static/chunks/app/r/create/page.js"
       ],
       "async": false
     },
-    "/home/aj-47/DiscussIt/src/components/ui/avatar.tsx#": {
-      "id": "(app-client)/./src/components/ui/avatar.tsx",
+    "/home/aj-47/DiscussIt/src/app/r/create/page.tsx#": {
+      "id": "(app-client)/./src/app/r/create/page.tsx",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/r/create/page:static/chunks/app/r/create/page.js"
       ],
       "async": false
     },
-    "/home/aj-47/DiscussIt/src/components/ui/avatar.tsx#Avatar": {
-      "id": "(app-client)/./src/components/ui/avatar.tsx",
-      "name": "Avatar",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/src/components/ui/avatar.tsx#AvatarFallback": {
-      "id": "(app-client)/./src/components/ui/avatar.tsx",
-      "name": "AvatarFallback",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/src/components/ui/avatar.tsx#AvatarImage": {
-      "id": "(app-client)/./src/components/ui/avatar.tsx",
-      "name": "AvatarImage",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/src/components/UserAuthForm.tsx": {
-      "id": "(app-client)/./src/components/UserAuthForm.tsx",
-      "name": "*",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/src/components/UserAuthForm.tsx#": {
-      "id": "(app-client)/./src/components/UserAuthForm.tsx",
-      "name": "",
-      "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
-      ],
-      "async": false
-    },
-    "/home/aj-47/DiscussIt/src/components/UserAuthForm.tsx#default": {
-      "id": "(app-client)/./src/components/UserAuthForm.tsx",
+    "/home/aj-47/DiscussIt/src/app/r/create/page.tsx#default": {
+      "id": "(app-client)/./src/app/r/create/page.tsx",
       "name": "default",
       "chunks": [
-        "app/(auth)/sign-in/page:static/chunks/app/(auth)/sign-in/page.js"
+        "app/r/create/page:static/chunks/app/r/create/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "suspense",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#suspense": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "suspense",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "NoSSR",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/node_modules/next/dist/esm/shared/lib/lazy-dynamic/dynamic-no-ssr.js#NoSSR": {
+      "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
+      "name": "NoSSR",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/EditorOutput.tsx": {
+      "id": "(app-client)/./src/components/EditorOutput.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/EditorOutput.tsx#": {
+      "id": "(app-client)/./src/components/EditorOutput.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/EditorOutput.tsx#default": {
+      "id": "(app-client)/./src/components/EditorOutput.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/MiniCreatePost.tsx": {
+      "id": "(app-client)/./src/components/MiniCreatePost.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/MiniCreatePost.tsx#": {
+      "id": "(app-client)/./src/components/MiniCreatePost.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/MiniCreatePost.tsx#default": {
+      "id": "(app-client)/./src/components/MiniCreatePost.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/Post.tsx": {
+      "id": "(app-client)/./src/components/Post.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/Post.tsx#": {
+      "id": "(app-client)/./src/components/Post.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/Post.tsx#default": {
+      "id": "(app-client)/./src/components/Post.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/PostFeed.tsx": {
+      "id": "(app-client)/./src/components/PostFeed.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/PostFeed.tsx#": {
+      "id": "(app-client)/./src/components/PostFeed.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/PostFeed.tsx#default": {
+      "id": "(app-client)/./src/components/PostFeed.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/post-vote/PostVoteClient.tsx": {
+      "id": "(app-client)/./src/components/post-vote/PostVoteClient.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/post-vote/PostVoteClient.tsx#": {
+      "id": "(app-client)/./src/components/post-vote/PostVoteClient.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/post-vote/PostVoteClient.tsx#default": {
+      "id": "(app-client)/./src/components/post-vote/PostVoteClient.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/renderers/CustomCodeRenderer.tsx": {
+      "id": "(app-client)/./src/components/renderers/CustomCodeRenderer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/renderers/CustomCodeRenderer.tsx#": {
+      "id": "(app-client)/./src/components/renderers/CustomCodeRenderer.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/renderers/CustomCodeRenderer.tsx#default": {
+      "id": "(app-client)/./src/components/renderers/CustomCodeRenderer.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/renderers/CustomImageRenderer.tsx": {
+      "id": "(app-client)/./src/components/renderers/CustomImageRenderer.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/renderers/CustomImageRenderer.tsx#": {
+      "id": "(app-client)/./src/components/renderers/CustomImageRenderer.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/renderers/CustomImageRenderer.tsx#default": {
+      "id": "(app-client)/./src/components/renderers/CustomImageRenderer.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/page:static/chunks/app/r/[slug]/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/SubscribeLeaveToggle.tsx": {
+      "id": "(app-client)/./src/components/SubscribeLeaveToggle.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/SubscribeLeaveToggle.tsx#": {
+      "id": "(app-client)/./src/components/SubscribeLeaveToggle.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/SubscribeLeaveToggle.tsx#default": {
+      "id": "(app-client)/./src/components/SubscribeLeaveToggle.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ToFeedButton.tsx": {
+      "id": "(app-client)/./src/components/ToFeedButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ToFeedButton.tsx#": {
+      "id": "(app-client)/./src/components/ToFeedButton.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/ToFeedButton.tsx#default": {
+      "id": "(app-client)/./src/components/ToFeedButton.tsx",
+      "name": "default",
+      "chunks": [
+        "app/r/[slug]/layout:static/chunks/app/r/[slug]/layout.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/styles/editor.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/r/[slug]/submit/page.css"
+      ]
+    },
+    "/home/aj-47/DiscussIt/src/components/Editor.tsx": {
+      "id": "(app-client)/./src/components/Editor.tsx",
+      "name": "*",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/Editor.tsx#": {
+      "id": "(app-client)/./src/components/Editor.tsx",
+      "name": "",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
+      ],
+      "async": false
+    },
+    "/home/aj-47/DiscussIt/src/components/Editor.tsx#Editor": {
+      "id": "(app-client)/./src/components/Editor.tsx",
+      "name": "Editor",
+      "chunks": [
+        "app/r/[slug]/submit/page:static/chunks/app/r/[slug]/submit/page.js"
       ],
       "async": false
     }

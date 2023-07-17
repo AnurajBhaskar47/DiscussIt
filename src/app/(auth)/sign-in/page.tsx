@@ -3,10 +3,7 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { FC } from 'react'
 import SignIn from '@/components/SignIn'
-
-interface pageProps {
-  
-}
+import { ChevronLeft } from 'lucide-react'
 
 const page: FC = () => {
   return <div className='absolute inset-0'>
@@ -16,7 +13,8 @@ const page: FC = () => {
             buttonVariants({ variant: 'ghost' }),
             'self-start -mt-20'
         )}>
-        Home
+        <ChevronLeft className='mr-2 h-4 w-4' />
+          Home
        </Link> 
 
        <SignIn />   

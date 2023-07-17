@@ -1,6 +1,10 @@
 {
   "pages": {},
-  "app": {},
-  "appUsingSizeAdjust": false,
+  "app": {
+    "/home/aj-47/DiscussIt/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Montserrat\",\"arguments\":[{\"subsets\":[\"latin\"],\"weight\":\"100\"}],\"variableName\":\"monterserrat\"}": [
+      "static/media/d5eb28b37a2fcb53-s.p.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
   "pagesUsingSizeAdjust": false
 }
