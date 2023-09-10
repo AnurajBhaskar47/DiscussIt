@@ -1,6 +1,6 @@
 # DiscussIt - A Reddit Clone
 
-DiscussIt is a Reddit clone web application that allows users to engage in discussions on various topics, post content, upvote/downvote posts and comments, and much more. It is built upon the foundation of the "Josh Tried Coding Breadit" project, providing a familiar Reddit-like experience while adding some unique features of its own.
+DiscussIt is a Reddit clone web application that allows users to engage in discussions on various topics, post content, upvote/downvote posts and comments, and much more. It is built upon the initial design of Reddit, providing a familiar Reddit-like experience while adding some unique features of its own.
 
 ![image](https://github.com/AnurajBhaskar47/DiscussIt/assets/97795939/17875f62-3bee-45a4-b68c-f206cd6a2a43)
 
